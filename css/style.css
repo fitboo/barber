@@ -5,7 +5,7 @@ body {
   margin: 0;
 }
 body {
-  background: #000000 url("barbershop-index-grid.jpg") no-repeat 50% 3px;
+  background: #000000 url("barbershop-index.jpg") no-repeat 50% 3px;
   background-size: 1122px auto;
 }
 .clearfix::after {
@@ -47,7 +47,7 @@ body {
 }
 .features {
   margin-bottom: 80px;
-}
+} 
 .features-item {
   float: left;
   width: 300px;
@@ -79,6 +79,7 @@ body {
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
+  background: orange;
 }
 .footer-contacts {
   float: left;
