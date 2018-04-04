@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Барбершоп</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="main-header">
+      <div class="container clearfix">
+        <nav class="main-navigation">
+            <ul>
+              <li><a href="#">главная</a></li>
+              <li><a href="#">информация</a></li>
+              <li><a href="#">новости</a></li>
+              <li><a href="#">прайс-лист</a></li>
+              <li><a href="#">магазин</a></li>
+              <li><a href="#">контакты</a></li>
+            </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#">вход</a>    
+        </div>
+      </div>
+  </header>
+  
+  <main class="inner-page">
+    <div class="container clearfix">
+      <div class="inner-page-title">
+        <h1>прайс-лист</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#">главная</a></li>
+          <li class="current">прайс-лист</li>
+        </ul>
+      </div>
+      <div class="inner-page-content">
+        <span class="price-title">истинно мужская классика</span>
+        <div class="inner-column clearfix">
+          <div class="inner-column-left">
+            <h2 class="inner-column-title">мы используем только лучшие средства:</h2>
+            <ul class="price_brands">
+              <li>baxter of california</li>
+              <li>mr natty</li>
+              <li>suavecito</li>
+              <li>malin+goetz</li>
+            </ul>
+          </div>
+          <div class="inner-column-right">
+            <h2 class="inner-column-title">цены на услуги наших мастеров:</h2>
+            <table class="price_table">
+              <tr>
+                <td>стрижка</td>
+                <td>1500 р.</td>
+              </tr>
+              <tr>
+                <td>стрижка бороды</td>
+                <td>500 р.</td>
+              </tr>
+              <tr>
+                <td>накрутка усов</td>
+                <td>350 р.</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="inner-column clearfix">
+          <h2 class="inner-column-title">несколько слов о нас:</h2>
+          <div class="inner-column-left">
+            <p class="inner-column-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+          </div>
+          <div class="inner-column-right">
+            <p class="inner-column-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="main-footer">
+      <div class="container clearfix">
+          <section class="footer-contacts">
+            барбершоп "бородинский"<br>
+            адрес: г. санкт-Петербург, ул. б. конюшенная, д. 19/8<br>
+            <a href="#">как нас найти?</a><br>
+            телефон: +7(495)666-02-66
+          </section>
+          <section class="footer-social">
+            <p>давайте дружить!</p>
+            <a class="social-btn social-btn-vk" href="#">вконтакте</a>  
+            <a class="social-btn social-btn-fb" href="#">фейсбук</a>  
+            <a class="social-btn social-btn-inst" href="#">инстаграм</a>  
+          </section>
+          <section class="footer-copyright">
+            <p>разработано:</p>
+            <a class="btn" href="https://htmlacademy.ru">htmlacademy.ru</a>  
+          </section>
+      </div>
+  </footer>
+  <div class="user-enter">
+    <button class="user-enter-close" type="button" title="Закрыть">закрыть</button>
+    <h2 class="user-enter-title">личный кабинет</h2>
+    <p>введите свой логин и пароль</p>
+    <form class="user-enter-form" action="#" method="post">
+      <input class="user-login" type="text" name="login" placeholder="Логин" required>
+      <input class="user-password" type="password" name="password" placeholder="Пароль" required>
+      <label><input type="checkbox" name="remember" id="remember-field"> запомните меня</label>
+      <a class="restore" href="#">я забыл пароль!</a>
+      <button class="btn" type="submit">войти</button>
+    </form>
+  </div>
+</body>
+</html>
