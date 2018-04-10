@@ -1,32 +1,33 @@
-html,
 body {
-  min-width: 1122px;
-  min-height: 1750px;
+  min-width: 960px;
   margin: 0;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000000 url("../pict/bg-body.png") no-repeat center top;
 }
-body {
-  background: #000000 url("barbershop-index.jpg") no-repeat 50% 3px;
-  background-size: 1122px auto;
-}
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
-.main-header {
-  margin-bottom: 60px;
-  
-    /* Только для оформления сетки */
-    background-color: gray;
-}
+
 .container {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  
-    /* Только для оформления сетки */
-  background-color: red;
 }
+
+.main-header {
+  margin-bottom: 60px;
+  color: #ffffff;
+  background-color: #000000;
+}
+
 .main-navigation {
   float: left;
   /* ширину взяли с запасом, на случай добавления 1-2 пунктов меню */
@@ -34,6 +35,33 @@ body {
     /* Только для оформления сетки */
   min-height: 70px;  
 }
+
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0; /* убираем пробелы */
+}
+
+.main-navigation li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.main-navigation a {
+  display: block; /* чтобы можно было прописать padding */
+  padding: 25px 20px;
+  color: #ffffff;
+  text-decoration: none; /* прописали, т.к. они не наследуют цвет текста */
+}
+
+.main-navigation a:hover,
+                 a:active {
+  background-color: #242424;
+}
+
 .user-block {
   float: right;
   /* для контейнера входа ширину взяли тоже с запасом, т.к. при входе вид может меняться - напр, появится имя пользователя */
@@ -41,19 +69,19 @@ body {
     /* Только для оформления сетки */
   min-height: 70px;  
 }
+
 .index-logo {
   width: 368px;
   height: 204px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 25px;
-  
-    /* Только для оформления сетки */  
-  background-color: darkgray;
 }
+
 .features {
   margin-bottom: 80px;
 } 
+
 .features-item {
   float: left;
   width: 300px;
@@ -61,35 +89,37 @@ body {
   
   /* Только для оформления сетки */
   min-height: 175px;  
-  background-color: darkgray;
 }
+
 .features-item:last-child {
   margin-right: 0;
 }
+
 .index-content {
   margin-bottom: 35px;
   padding: 50px 80px;
 }
+
 .index-content-left {
   float: left;
   width: 380px;
    /* Только для оформления сетки */
   min-height: 330px;  
 }
+
 .index-content-right {
   float: right;
   width: 300px;
    /* Только для оформления сетки */
   min-height: 330px;  
 }
+
 .main-footer {
   margin-top: 65px;
   padding-top: 60px;
   padding-bottom: 40px;
-  
-    /* Только для оформления сетки */
-  background: orange;
 }
+
 .footer-contacts {
   float: left;
   width: 320px;
@@ -97,12 +127,14 @@ body {
    /* Только для оформления сетки */
   min-height: 90px;  
 }
+
 .footer-social {
   float: left;
   width: 180px;
    /* Только для оформления сетки */
   min-height: 90px;  
 }
+
 .footer-copyright {
   float: right;
   width: 180px;
@@ -142,6 +174,12 @@ body {
 }
 
 /* price */
+.inner-column {
+  margin-bottom: 65px;
+}
+.inner-column:last-child {
+  margin-bottom: 80px;
+} 
 .inner-column-left {
   float: left;
   width: 390px;
@@ -150,3 +188,4 @@ body {
   float: right;
   width: 470px;
 }
+
